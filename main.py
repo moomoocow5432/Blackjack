@@ -18,6 +18,7 @@ def create_deck():
     return deck
     
 """Input a deck of cards, output is a shuffled deck"""
+
 def shuffle(deck):
     new_deck = []
     for i in range(51):
@@ -26,7 +27,10 @@ def shuffle(deck):
         new_deck.append(deck[card])
         deck.pop(card)
     return(new_deck)
+    
+def round(deck_1, money):
+    player_cards = deck_1[0]
+    
 
 deck_1 = create_deck()
-print(deck_1)
-print(shuffle(deck_1))
+money = 1000
